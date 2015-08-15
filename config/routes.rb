@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'dashboard/index'
 
   resources :sessions
-  get 'sessions/index'
-
 
   root "sessions#index"
 
-  get "profile" => "sessions#index" , :as => "profile"
+ 
+
+  get "dashboard" => "dashboard#index" , :as => "dashboard"
+
+  get "logout" => "sessions#destroy" , :as => "logout"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
