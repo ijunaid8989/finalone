@@ -6,8 +6,10 @@ class SessionsController < ApplicationController
 
   	if @user
   		redirect_to "/profile"
+  		flash[:notice] = "In"
   	else
-  		redirect_to "/chal"
+  		redirect_to "/profile"
+  		flash[:notice] = "bahir"
   	end
 
   end

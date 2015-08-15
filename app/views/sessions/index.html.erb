@@ -1,5 +1,22 @@
 <%= form_tag sessions_path do %>
-	<%= text_field_tag :username , "" , :placeholder => "username" %>
-	<%= password_field_tag :password , "" , :placeholder => "password" %>
-	<%= submit_tag "Sign In" %>
+	<section id="MainCon">
+		<div class="form_start">
+			<div class="panel-heading">WebSol Inc.</div>
+			<div class="group-item">
+				<span class="welcome-text">Welcome Back to Panel</span>
+				<span class="member">Not a Member?</span> <a href="javascript:;">Sign Up &gt;&gt;</a>
+			</div>
+			<div class="group-item">
+				<span class="login-text">Login with your Portal account</span>
+				<div class="form-group">
+					<%= text_field_tag :username , "" , :class => "form-control input-lg" , :placeholder => "username" %>
+					<%= password_field_tag :password , "" , :class => "form-control input-lg top_t" ,:placeholder => "password" %>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<%= submit_tag "LOGIN TO YOUR ACCOUNT" , :class => "btn btn-lg btn-success" %>
+				<a href="javascript:;" class="forgot">Forgot Your Password?</a>
+			</div>
+		</div>
+	</section>
 <% end %>
