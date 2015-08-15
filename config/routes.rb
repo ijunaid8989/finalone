@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'levelsub/index'
+
   resources :sessions
 
   root "sessions#index"
@@ -10,6 +12,8 @@ Rails.application.routes.draw do
   get "dashboard" => "dashboard#index" , :as => "dashboard"
 
   get "logout" => "sessions#destroy" , :as => "logout"
+
+  get "setuplevel" => "levelsub#index" , :as => "setuplevel"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

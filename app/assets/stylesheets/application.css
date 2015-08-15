@@ -26,15 +26,38 @@
 	margin-top: 20px;
 }
 
+#navi ul {
+	list-style: none;
+}
 #navi ul li{
 	list-style: none;
-	padding: 13px 15px;
 	display: inline-block;
-	background-color: white;
 }
 
 #navi ul li a{
 	text-decoration: none;
-	color: cyan;
+	color: blue;
+	background-color: white;
+	float: left;
+	padding: 13px 15px;
+	
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
 }
 

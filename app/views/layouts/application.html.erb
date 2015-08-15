@@ -7,15 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= 
-	if flash[:notice]
-		flash[:notice]
-	end
-%>
+<% if flash[:notice] %>
+		<div class="alert alert-danger"><%=flash[:notice]%></div>
+<% end %>
 <% if logged_in? %>
 	<section id="navi">
 		<ul>
 			<li><%= link_to "Dashboard", "/dashboard" %></li>
+			<li><%= link_to "Setup Level", "/setuplevel" %></li>
 		</ul>
 	</section>
 <% end %>
