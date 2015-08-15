@@ -12,6 +12,13 @@
 		flash[:notice]
 	end
 %>
+<% if logged_in? %>
+	<section id="navi">
+		<ul>
+			<li><%= link_to "Dashboard", "/dashboard" %></li>
+		</ul>
+	</section>
+<% end %>
 <%= yield %>
 
 </body>
