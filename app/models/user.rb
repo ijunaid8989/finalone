@@ -8,5 +8,4 @@ def self.authenticate(username , password)
 		nil
 	end
 end
-
 end
