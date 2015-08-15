@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
 
-  get 'levelsub/index'
+  get 'levels/index'
 
   resources :sessions
+  resources :levels
+  resources :subjects
 
   root "sessions#index"
 

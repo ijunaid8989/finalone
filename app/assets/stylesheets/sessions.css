@@ -162,3 +162,22 @@ a{
 	font-size: 14px;
 	line-height: 1.428571429;
 }
+#bothend{
+	width: 930px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.in_text{
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	font-family: 'Titillium Web',sans-serif;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #e3e3e3;
+	height: 41px;
+}
