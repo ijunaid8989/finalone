@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'secs/index'
+
   get 'subjects/index'
 
   get 'levels/index'
