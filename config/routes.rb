@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'subjects/index'
+
   get 'levels/index'
 
   resources :sessions
@@ -15,7 +17,7 @@ Rails.application.routes.draw do
 
   get "logout" => "sessions#destroy" , :as => "logout"
 
-  get "setuplevel" => "levelsub#index" , :as => "setuplevel"
+  get "setuplevel" => "levels#index" , :as => "setuplevel"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
