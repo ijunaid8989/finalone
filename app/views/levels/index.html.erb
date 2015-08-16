@@ -1,15 +1,15 @@
 <section id="bothend">
 	<%= form_for @level do |f| %>
-	<div class="lits">
-		<%= f.label :name, "Level Name :" , :class => "flew_right"%>
-	  	<%= f.text_field :name , :class => "in_text flew_left" , :placeholder => "level name" %>
+	<div class="form-group">
+		<%= f.label :name, "Level Name :"%>
+	  	<%= f.text_field :name , :class => "form-control", :placeholder => "level name" %>
 	</div>
-	<div class="lits">
+	<div class="form-group">
 	  	<%= fields_for @subs do |u| %>
-			<%= u.label :name, "Subjects Name :" , :class => "flew_right" %>
-		  	<%= u.text_area :name ,  size: "24x6" , :class => "flew_left" , :placeholder => "Subjects name" %>
+			<%= u.label :name, "Subjects Name :" %>
+		  	<%= u.text_area :name ,  size: "24x6" , :placeholder => "Subjects name" %>
 		<% end %>
 	</div>
-		<%= f.submit "Create" , :class => "boyi" %>
+		<%= f.submit "Create" , :class => "btn btn-primary" %>
 	<% end %>
 </section>

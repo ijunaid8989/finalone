@@ -3,13 +3,14 @@
 	margin: 0 auto;
 }
 body{
-	background-color: #F5F5F5;
+	
 }
 #MainCon{
 	width: 700px;
-	
+	background-color: #F5F5F5;
 	height: auto;
 	overflow: hidden;
+	padding-bottom: 40px;
 }
 
 .form_start{
@@ -60,12 +61,17 @@ body{
 
 }
 
-a{
+#MainCon a{
 	color: #BB0062;
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 1.428571429;
 	font-family: 'Titillium Web', sans-serif;
+}
+
+.lopPP{
+	width: 960px;
+	margin: 0 auto;
 }
 
 .login-text{
@@ -167,7 +173,7 @@ a{
 	height: auto;
 	overflow: hidden;
 	margin-top: 20px;
-	text-align: center;
+	
 }
 
 .in_text{
@@ -184,11 +190,6 @@ a{
 
 }
 
-#bothend label{
-	font-family: 'Titillium Web',sans-serif;
-	padding: 10px 5px;
-	display: inline-block;
-}
 
 .lits{
 	width: 700px;
