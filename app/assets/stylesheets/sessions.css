@@ -167,6 +167,7 @@ a{
 	height: auto;
 	overflow: hidden;
 	margin-top: 20px;
+	text-align: center;
 }
 
 .in_text{
@@ -177,6 +178,7 @@ a{
 	font-family: 'Titillium Web',sans-serif;
 	color: #555;
 	background-color: #fff;
+	display: inline-block;
 	background-image: none;
 	border: 1px solid #e3e3e3;
 
@@ -184,4 +186,23 @@ a{
 
 #bothend label{
 	font-family: 'Titillium Web',sans-serif;
+	padding: 10px 5px;
+	display: inline-block;
 }
+
+.lits{
+	width: 700px;
+	height: auto;
+	text-align: center;
+	overflow: hidden;
+	padding: 10px 0px;
+}
+
+.boyi{
+	background: white;
+	font-family: 'Titillium Web',sans-serif;
+	padding: 10px 10px;
+	border: none;
+
+}
+
