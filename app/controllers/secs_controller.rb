@@ -5,10 +5,16 @@ class SecsController < ApplicationController
   end
 
   def create
-  	@sec = Sec.new(params[:name],params[:level_id])
+  	@sec = Sec.new(sec_params)
 
   	if @sec.save
   		redirect_to "/setupclass"
   	end
   end
+
+ private
+
+ def sec_params
+ 	params.require(:sec).permit(:name,:level_id)
+ end
 end
