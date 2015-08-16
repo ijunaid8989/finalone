@@ -1,2 +1,13 @@
-<h1>Secs#index</h1>
-<p>Find me in app/views/secs/index.html.erb</p>
+<section class="addUPclass">
+	<%= form_for @sec do |f| %>
+		<div class="form-group">
+			<%= f.label :name, "Class Name :"%>
+		  	<%= f.text_field :name , :class => "form-control", :placeholder => "class name" %>
+		</div>
+		<div class="form-group">
+			<%= f.label :level_id, "Level :"%>
+	  		<%= f.select :level_id, options_from_collection_for_select(@level, "id", "name") %>
+		</div>
+		<%= f.submit "Create" , :class => "btn btn-primary" %>
+	<% end %>
+</section>
